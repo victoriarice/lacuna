@@ -1,5 +1,5 @@
 ---
-title: Your awesome title
+title: Lacuna Bodyworks
 timezone: UTC
 collections:
   posts:
@@ -17,6 +17,7 @@ url: ''
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
-theme: minima
+theme:
 plugins:
-- jekyll-feed
+sass:
+  sass_dir: _sass
