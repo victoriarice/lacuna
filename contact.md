@@ -5,3 +5,7 @@ position: 2
 ---
 
 Contact Lacuna Bodyworks
+
+123-456-7890
+
+lacunabodyworks@gmail.com
