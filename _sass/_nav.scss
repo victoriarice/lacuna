@@ -1,4 +1,7 @@
-.nav {}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .nav__list {
   display: flex;

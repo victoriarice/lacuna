@@ -1,16 +1,18 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav__list">
-      {% assign navigation_pages = site.html_pages | sort: 'position' %}
-      {% for p in navigation_pages %}
-        {% if p.position %}
-          <li class="nav__item">
-            <a class="nav__link{% if p.url == page.url %} nav__link--active{% endif %}" href="{{ p.url }}">
-              {{ p.title }}
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__list">
+        {% assign navigation_pages = site.html_pages | sort: 'position' %}
+        {% for p in navigation_pages %}
+          {% if p.position %}
+            <li class="nav__item">
+              <a class="nav__link{% if p.url == page.url %} nav__link--active{% endif %}" href="{{ p.url }}">
+                {{ p.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>
