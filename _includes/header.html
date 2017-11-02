@@ -1,9 +1,14 @@
-<header>
-  Hello from the header
-  <nav class="main-nav">
-    <ul>
-      <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-      <li><a href="/blog.html" {% if page.url == "/blog.html" %}class="active"{% endif %}>Blog</a></li>
-    </ul>
-  </nav>
-</header>
+<nav class="main-nav">
+  <ul>
+    {% assign navigation_pages = site.html_pages | sort: 'position' %}
+    {% for p in navigation_pages %}
+      {% if p.position %}
+        <li>
+          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
