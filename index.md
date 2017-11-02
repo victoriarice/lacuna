@@ -1,7 +1,7 @@
 ---
 title: Home
-layout: default
 position: 0
+layout: default
 ---
 
 Welcome to Lacuna Bodyworks

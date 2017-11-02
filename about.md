@@ -1,8 +1,8 @@
 ---
 title: About
 permalink: "/about/"
-layout: default
 position: 1
+layout: default
 ---
 
 About Lacuna Bodyworks

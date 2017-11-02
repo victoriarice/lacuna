@@ -17,7 +17,7 @@ url: ''
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
-theme:
-plugins:
+theme: 
+plugins: 
 sass:
   sass_dir: _sass
