@@ -1,0 +1,17 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="hero">
+  <div class="hero__card">
+    <h1>{{ page['welcome message'] }}</h1>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+
+{% include footer.html %}
