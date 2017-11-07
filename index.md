@@ -4,6 +4,8 @@ position: 0
 hero:
   welcome message: Welcome to Lacuna Bodyworks
   image: "/uploads/body-work.jpg"
+  button:
+    text: Make an appointment
 layout: home
 ---
 
