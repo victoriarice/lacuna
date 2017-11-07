@@ -3,6 +3,7 @@ title: Home
 position: 0
 hero:
   welcome message: Welcome to Lacuna Bodyworks
+  image: "/uploads/body-work.jpg"
 layout: home
 ---
 
