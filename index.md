@@ -6,6 +6,7 @@ hero:
   image: "/uploads/body-work.jpg"
   button:
     url: "/contact/"
+    text: Make an appointment
 layout: home
 ---
 
