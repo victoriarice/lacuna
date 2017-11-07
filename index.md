@@ -1,7 +1,8 @@
 ---
 title: Home
 position: 0
-welcome message: Welcome to Lacuna Bodyworks
+hero:
+  welcome message: Welcome to Lacuna Bodyworks
 layout: home
 ---
 
