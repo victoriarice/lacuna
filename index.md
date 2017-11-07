@@ -5,13 +5,7 @@ welcome message: Welcome to Lacuna Bodyworks
 layout: default
 ---
 
-<div class="hero">
-  <div class="hero__card">
-    <h1>
-      {{ page['welcome message'] }}
-    </h1>
-  </div>
-</div>
+# {{ page['welcome message'] }}
 
 Illo optio eaque vel delectus nihil. Recusandae odit ipsum eum nostrum autem. Explicabo molestias consectetur odio harum autem labore lorem similique sed asperiores libero elit. Vitae sit itaque dolor opsum amet voluptatem. Rem illo dolor asperiores. Nostrum molestias consectetur odio elit lorem vitae aliquid recusandae libero autem autem odit voluptatem.
 
