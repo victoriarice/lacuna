@@ -1,4 +1,14 @@
 .header {
-  background-color: $arsenic;
+  background-color: $grey;
   padding: 25px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-wrapper {
+  margin-right: auto;
+  font-size: 1.5rem;
 }

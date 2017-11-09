@@ -1,10 +1,27 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
+  <div class="container header__container">
+    <div class="header__logo-wrapper">
+      L|A|C|U|N|A
+    </div>
+
+    <button class="nav__button nav__button--open js-open-nav" type="button">
+      <i class="fa fa-bars" aria-hidden="true" title="Open navigation"></i>
+      <span class="sr-only">Open navigation</span>
+    </button>
+
+    <nav class="nav js-nav">
+      <button class="nav__button nav__button--close js-close-nav" type="button">
+        <i class="fa fa-times" aria-hidden="true" title="Close navigation"></i>
+        <span class="sr-only">Close navigation</span>
+      </button>
+
+      <!-- <i class="fa fa-car" aria-hidden="true" title="Time to destination by car"></i>
+      <span class="sr-only">Time to destination by car:</span> -->
+
       <ul class="nav__list">
         {% assign navigation_pages = site.html_pages | sort: 'position' %}
         {% for p in navigation_pages %}
-          {% if p.position %}
+          {% if p.position and p.title != 'Home' %}
             <li class="nav__item">
               <a class="nav__link{% if p.url == page.url %} nav__link--active{% endif %}" href="{{ p.url }}">
                 {{ p.title }}
