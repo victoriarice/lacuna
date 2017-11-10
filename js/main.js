@@ -1,5 +1,6 @@
 (function() {
   const navOpenClass = 'nav--open'
+  const navListClass = 'js-nav-list'
 
   const openNavButton = document.querySelector('.js-open-nav')
   const closeNavButton = document.querySelector('.js-close-nav')
@@ -11,14 +12,20 @@
 
   const addEventListeners = () => {
     openNavButton.addEventListener('click', openNav)
-    closeNavButton.addEventListener('click', closeNav)
+    nav.addEventListener('click', onNavClick)
   }
 
-  const openNav = (e) => {
+  const onNavClick = (e) => {
+    if (!e.target.classList.contains(navListClass)) {
+      closeNav()
+    }
+  }
+
+  const openNav = () => {
     nav.classList.add(navOpenClass)
   }
 
-  const closeNav = (e) => {
+  const closeNav = () => {
     nav.classList.remove(navOpenClass)
   }
 
