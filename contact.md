@@ -2,7 +2,7 @@
 title: Contact
 permalink: "/contact/"
 position: 2
-layout: default
+layout: contact
 ---
 
 Contact Lacuna Bodyworks
