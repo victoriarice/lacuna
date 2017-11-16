@@ -9,6 +9,7 @@
   transition-duration: 195ms;
   transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
   padding: 25px;
+  z-index: 999;
 
   @media (min-width: $small) {
     position: static;
