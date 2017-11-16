@@ -13,6 +13,7 @@
   @media (min-width: $small) {
     position: static;
     transform: translate3d(0, 0, 0);
+    will-change: transform;
     background-color: transparent;
     width: auto;
     padding: 0;
@@ -74,6 +75,7 @@
 
   @media (min-width: $small) {
     border: none;
+    margin: 0 10px;
 
     &:nth-child(1) {
       display: none;
@@ -87,11 +89,50 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: 1.25rem;
+  position: relative;
 
   &:hover {
     background-color: rgba(0,0,0,0.25);
     transition: background-color 0.1s linear;
   }
+
+  @media (min-width: $small) {
+    color: $arsenic;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: $arsenic;
+      top: 100%;
+      will-change: width;
+      transition: width 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+
+    &::before {
+      left: 50%;
+    }
+
+    &::after {
+      right: 50%;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
+  }
 }
 
-.nav__link--active {}
+.nav__link--active {
+  &::before,
+  &::after {
+    width: 50%;
+  }
+}

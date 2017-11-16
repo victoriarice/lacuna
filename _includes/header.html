@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container header__container">
     <div class="header__logo-wrapper">
-      <a href="/">L|A|C|U|N|A</a>
+      <a class="header__logo" href="{{ site.url }}/">L|A|C|U|N|A</a>
     </div>
 
     <button class="nav__button nav__button--open js-open-nav" type="button">
@@ -20,7 +20,7 @@
         {% for p in navigation_pages %}
           {% if p.position %}
             <li class="nav__item">
-              <a class="nav__link{% if p.url == page.url %} nav__link--active{% endif %}" href="{{ p.url }}">
+              <a class="nav__link{% if p.url == page.url %} nav__link--active{% endif %}" href="{{ site.url }}{{ p.url }}">
                 {{ p.title }}
               </a>
             </li>

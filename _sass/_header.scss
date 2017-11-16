@@ -1,5 +1,4 @@
 .header {
-  background-color: $grey;
   padding: 25px 0;
 }
 
@@ -11,4 +10,9 @@
 .header__logo-wrapper {
   margin-right: auto;
   font-size: 1.5rem;
+}
+
+.header__logo {
+  color: $arsenic;
+  text-decoration: none;
 }
