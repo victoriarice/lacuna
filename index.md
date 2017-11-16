@@ -3,7 +3,7 @@ title: Home
 position: 0
 hero:
   welcome message: Welcome to Lacuna Bodyworks
-  image: "/uploads/body-work.jpg"
+  image: "/uploads/mountains-clouds-forest-fog.jpg"
   button:
     url: "/contact/"
     text: Make an appointment
