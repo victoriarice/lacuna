@@ -2,7 +2,7 @@
 title: Home
 position: 0
 hero:
-  welcome message: Welcome to Lacuna Bodyworks
+  welcome message: At Lacuna we create space. Enhancing space between muscle tissue.
   image: "/uploads/mountains-clouds-forest-fog.jpg"
   button:
     url: "/contact/"
