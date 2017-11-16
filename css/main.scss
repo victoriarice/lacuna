@@ -1,14 +1,28 @@
 ---
 ---
 
+// Settings - global settings (base font size, colour palettes, config)
 @import "variables";
 @import "colors";
-@import "reset";
-@import "layout";
 @import "fonts";
+
+// Tools - globally available tooling (mixins and functions)
+
+// Generic - high-level, far reaching styles (Normalize.css, global box-sizing rules, CSS resets)
+@import "reset";
+
+// Elements - bare, unclassed HTML elements (h1, h2, ul)
 @import "body";
+
+// Objects - non-cosmetic design patterns (wrapper element, layout systems, Media Object)
+@import "layout";
+
+// Components - explicit, designed pieces of the DOM (majority of your work)
+@import "button";
 @import "header";
 @import "footer";
 @import "nav";
 @import "hero";
 @import "form";
+
+// Trumps - beats all other layers (utility and helper classes, hacks and overrides)
